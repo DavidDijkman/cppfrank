@@ -12,7 +12,7 @@ int main()
 
     while (cin.get(c)) 
     {
-        switch (c)
+        switch (tolower(c))
         {
             case 'a':
                 aCount++;
