@@ -1,0 +1,35 @@
+Exercise 5 asks us to create a table listing the escape sequences in C++.
+
+seq | output
+----------------------------
+\\  |  \ character
+\?  |  ? character
+\'  |  ' character
+\"  |  " character
+\n  |  new line
+\f  |  new page
+\v  |  vertical tab
+\t  |  horizontal tab
+\r  |  roll back to line start
+\b  |  backspace
+\a  |  audible bell sound
+\u  |  arbitrary unicode character when followed by hexadecimal code
+\N  |  arbitrary unicode character by following {NAME}
+\x  |  code unit defined by following hexadecimal code
+\o  |  code unit defined by following octal code
+
+source: https://en.cppreference.com/cpp/language/escape [accessed: 2026-08-20]
+
+Using another character as an escape sequence will result in a compiler 
+warning and will print the character as if it was not in an escape sequence.
+
+As an example to show how unrecognized escape sequences are interpreted as if 
+the escape character wasn't written:
+
+cout << "Hello, \world!\n";
+
+results in
+
+Hello, world!
+
+while reporting a warning during compilation.

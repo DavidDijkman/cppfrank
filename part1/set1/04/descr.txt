@@ -1,0 +1,2 @@
+Exercise 4 asks us to write a Raw String Literal to standard output, where
+a custom delimiter is necessary to delimit the string contents.

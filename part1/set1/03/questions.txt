@@ -1,0 +1,30 @@
+In Exercise 3 we must describe six aspects of C++ which are not available in C 
+and their purpose.
+1. C++ allows you to write directly to the output and input stream using 
+stream objects such as cout, cin, and cerr using the insertion (<<) and 
+extraction (>>) operator. In C functions such as printf and scanf were used 
+to write to and read from the output and input streams.
+
+2. C++ grammar introduces the scope resolution operator (::). This operator 
+allows you to define the scope from which you want to access a function or 
+variable. One possible use case is using '::varName' to access a global 
+variable 'varName', even if it is shadowed by a local variable with the 
+same name.
+
+3. C++ also introduces namespaces, which allow you to define all subsequent 
+declarations in a broader context. The previously named scope resolution 
+operator is also used to define the namespace.
+
+4. C++ allows function overloading where C does not. In C++, you can declare 
+both functions f(int n) and f(float n), and the compiler will resolve which of
+the declarations is used. In C this is not allowed and declarations have to be
+distinct by name.
+
+5. C++ allows the use of classes, a basis for object-oriented programming, 
+which C does not have. A Class is a type of blueprint which allows you to 
+initialize objects with their own state and methods to alter their state 
+(very much a simplification).
+
+6. C++ introduces references, which allow you to create an alternate name for
+the same variable. A reference can be used to pass an argument to a function 
+without copying the argument and without adding unnecessary indirection.

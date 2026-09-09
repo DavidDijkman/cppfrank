@@ -1,0 +1,11 @@
+Exercise 1 asks us to create a simple 'Hello World' program in C++. We need to 
+provide a short description of object and executable files, and provide the 
+file sizes of the different file types.
+
+Commands used
+to create the executable file 'hello':
+g++-15 -std=c++26 -Wall -Werror -o -s hello hello.cc
+to create the object file 'hello.o':
+g++-15 -std=c++26 -Wall -Werror -c hello.cc
+to obtain the different file sizes:
+ls -l

@@ -1,0 +1,18 @@
+Hello World
+
+The file sizes of the various files in bytes.
+
+executable  'hello'     16128
+object      'hello.o'   1672
+source      'hello.cc'  84
+iostream    'iostream'  3125
+
+Description of object and executable files
+
+an executable file is a self-contained set of machine code that can be 
+understood and executed by a computer.
+
+an object file contains compiled code together with metadata that describes 
+how to link the object file to other modules. It is usually not directly 
+executable, and a linker is used to combine the object file with other modules 
+to create an executable.

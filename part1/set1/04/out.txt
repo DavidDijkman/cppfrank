@@ -1,0 +1,9 @@
+^\s+Encryption key:(\w+)
+^\s+Quality=(\d+)
+^\s+E?SSID:"([[:print:]]+)"
+^\s+ssid="([[:print:]]+)"
+
+A rule to decide whether you can use the standard RSL form ' R"(...)" ' can be
+formulated. If the RSL includes the ending characters ')"' , the standard RSL 
+form cannot be used, and an extra delimiter phrase must be added between the 
+parentheses and quotation marks.

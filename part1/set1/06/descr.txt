@@ -1,0 +1,3 @@
+Exercise 6 asks us to substitute 'expression' in (expression ? "odd" : "even")
+with 6 distinct c++ expressions that distinguish between an odd and even 'n'. 
+When constructing these expressions, no operators(except ==) can be repeated.

@@ -1,0 +1,4 @@
+Exercise 7 asks us to create a program that takes an arbitrary number of 
+arguments. If the amount of arguments is zero, then "hello world" is printed. 
+Otherwise, "hello xxx" is printed, where xxx is n'th argument, where n is 
+given by the first argument.

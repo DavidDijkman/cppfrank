@@ -1,0 +1,2 @@
+Exercise 8 asks us to read a mask value and the 4 octets of an ip4 address. Subsequently, we must apply the mask to
+the ip4 address and print out the resulting octets in its 4 octets.

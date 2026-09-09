@@ -1,0 +1,19 @@
+out 32:
+129.125.3.162
+
+out 28:
+129.125.3.160
+
+out 24:
+129.125.3.0
+
+out 20:
+129.125.0.0
+
+out 16:
+129.125.0.0
+
+We don't see a difference between the mask values 20 and 16 because the bits 
+20-16 are already set to 0 in the given ip4 address. The second octet is '3', 
+or 00000011, while the masks for this octet are 11110000 and 00000000 for mask
+values 20 and 16 respectively.
