@@ -1,0 +1,6 @@
+Exercise 9.
+The exercise asks us to separately count the nummber of a-, e-, and i-characters (capital or lower-case) of a file. The output looks like
+    # a-chars: 24, # e-chars: 30, # i-chars: 38
+ 
+Where the output of flow.txt was:
+# a-chars: 214, # e-chars: 441, # i-chars: 223
