@@ -10,6 +10,5 @@ int main(int argc, char *argv[])
     string summation;
     string bits;
 
-    
-
+    cout << number << "=" << 
 }
