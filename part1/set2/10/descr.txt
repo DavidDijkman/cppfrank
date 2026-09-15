@@ -1,3 +1,5 @@
-Exercise 10 asks us to write a program that gets a line from stdin, and 
-prints out the line, stripped of any leading or trailing blanks. We should
-also add a single leading '"' and trailing '`'.
+Exercise 10.
+Write a program reading a line of text from the std input stream into a string variable. The line may start and or terminate with blanks (do some research to find out what blanks are). Optionally write a ? and a space prompt to the standard output stream.
+
+Then, in one cout expression show the content of the string from which the blanks from both the beginning and the end of the string have been removed. Before displaying the content write a backquote character, after its content insert a single quote character and a newline.
+
