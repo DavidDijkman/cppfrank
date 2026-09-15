@@ -1,0 +1,2 @@
+Exercise 9 asks us to create a program that reads a text from stdin and 
+prints out the amount of a's, e's and i's in that text.

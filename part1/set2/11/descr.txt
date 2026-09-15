@@ -1,0 +1,4 @@
+Exercise 11 asks us to create a program that takes one integer as argument.
+The program must then print the number, its bit representation, and
+the summation of the powers of two that make up the integer. The integer
+can be negative, and the program must work for any integer data type.

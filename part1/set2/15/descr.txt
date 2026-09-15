@@ -1,0 +1,2 @@
+For exercise 15, the program we create takes n arguments, and must then print
+out every possible combination of arguments. 

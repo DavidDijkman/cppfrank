@@ -1,0 +1,4 @@
+Exercise 12 asks us to create a program that determines whether the arguement
+is divisible by 3. We do this by utilizing the property that if the sum of 
+the digits of a number is divisible by 3, then that number is also divisible 
+by 3.

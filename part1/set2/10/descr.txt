@@ -1,0 +1,3 @@
+Exercise 10 asks us to write a program that gets a line from stdin, and 
+prints out the line, stripped of any leading or trailing blanks. We should
+also add a single leading '"' and trailing '`'.
