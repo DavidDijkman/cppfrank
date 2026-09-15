@@ -1,0 +1,11 @@
+Exercise 16
+Our program takes a set of bits as input and a direction.
+The given bits must be rotated one bit over in the given direction.
+The result must be printed in binary, hexadecimal, and decimal.
+
+
+rotate 1011110101011011 ror :
+    1101111010101101 48475 bd5b
+
+rotate 1101111101110111 rol :
+    1011111011101111 32223 7ddf

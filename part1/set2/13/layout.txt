@@ -9,3 +9,10 @@ if (first == test1)
 
 
 if (first == test1) {if (second == test2) value = 5; } else value = 6;
+
+We can't seem to fine a flaw in the original statement, unless 'value' being 
+undefined in case 'first != test' is seen as a flaw. It is noteworthy that you
+can rewrite the statement more concisely as
+
+if (first == test1 && second == test2)
+    value = second == test2 ? 5 : 6;
