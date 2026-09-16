@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstring>
+#include "sum.h"
+
+using namespace std;
+
+int main(int argc, char* argv[]) {
+    bool all_int = true;
+    for (int i = 1; i < argc; ++i) {
+        if (strchr(argv[i], '.')) {
+            all_int = false;
+            break;
+        }
+    }
+
+    if (all_int) {
+        cout << sum(argc, argv, 0) << endl;
+    } else {
+        cout << sum(argc, argv, 0.0) << endl;
+    }
+
+    return 0;
+}
