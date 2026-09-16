@@ -25,7 +25,8 @@ int main()
             x1 = x0 + (number - x0 * x0) / (2 * x0);
             if (x0 == x1)
                 break;
-            cout << step << ": x0:" << x0 << " x1: " << x1 << " sqr: " << x1 * x1 << endl;
+            cout << step << ": x0:" << x0 << " x1: " << x1 
+                << " sqr: " << x1 * x1 << endl;
             x0 = x1;
             step++;
         }
