@@ -1,0 +1,15 @@
+#ifndef INCLUDED_MAIN_IH_
+#define INCLUDED_MAIN_IH_
+
+#include <string>
+
+using namespace std;
+
+typedef struct ReturnValues
+{
+    bool exists;
+    size_t nr;
+    string value;
+} ReturnValues;
+
+#endif  

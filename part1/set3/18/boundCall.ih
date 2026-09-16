@@ -1,0 +1,8 @@
+#ifndef INCLUDED_BOUNDCALL_IH_
+#define INCLUDED_BOUNDCALL_IH_
+
+#include "main.ih"
+
+void boundCall(int argc, char* argv[]);
+
+#endif

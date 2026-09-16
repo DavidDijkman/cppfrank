@@ -3,4 +3,3 @@ arguments, where their arguments can be integers or floats. Using function
 overloading, the arguments determine whether sum1 for integers or sum2 for 
 doubles is called. We check if the arguments contain a float by checking if 
 any of the arguments contain a dot.
-

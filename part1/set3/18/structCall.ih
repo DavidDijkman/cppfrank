@@ -1,0 +1,8 @@
+#ifndef INCLUDED_STRUCTCALL_IH_
+#define INCLUDED_STRUCTCALL_IH_
+
+bool structCall(int argc, char* argv[]);
+
+#endif  
+
+
