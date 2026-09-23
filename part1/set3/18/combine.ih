@@ -1,8 +1,0 @@
-#ifndef INCLUDED_COMBINE_IH_
-#define INCLUDED_COMBINE_IH_
-
-#include "main.ih"
-
-ReturnValues combine(int argc, char* argv[]);
-
-#endif  
