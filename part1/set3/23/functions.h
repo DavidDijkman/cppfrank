@@ -1,0 +1,14 @@
+#ifndef INCLUDED_COMBINE_IH_
+#define INCLUDED_COMBINE_IH_
+
+#include <string>
+
+using namespace std;
+
+bool containsChar(string line, char charToFInd);
+bool isBlank(char character);
+string collapsBlanks(string line);
+string collapsChar(string line, char charToCollapse);
+string processLine(string line, string charsToCollapse);
+
+#endif  

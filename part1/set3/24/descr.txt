@@ -1,0 +1,40 @@
+In the exercise, we will get experience with profiling. First, the code is
+transformed according to the one-function-one-source rule. The aim is to test 
+results of different profiling optimization flags. 
+
+
+What do different (-o0, -o1, -o2, -o3) optimization flags do?
+-o0: No optimization, minimum of compile time
+-o1: Basic optimizations with smaller increase of compile time
+-o2: Aggressive optimization, increased compile time
+-o3: Performes even more aggressive optimizations and largest compile time
+
+we compile the progrma using 
+g++ -pg -O2 *.cc -o prog 
+We then run the program and extract profile with 
+gprof -p -b prog gmon.out > profile_O2.txt
+
+We get these results for the -o2 optimization flag, where we observe that 
+fun2() takes most computation time followed by callValue():
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 66.67      0.02     0.02 10000000     0.00     0.00  fun2()
+ 33.33      0.03     0.01        1    10.00    10.00  callValue()
+  0.00      0.03     0.00 10000000     0.00     0.00  fun()
+  0.00      0.03     0.00        1     0.00    20.00  callRef()
+
+
+When we use the -o1 optimization flag, we observe that callValue is taking the
+most computation time followed by fun2():
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 33.33      0.04     0.04        1    40.00    60.00  callValue()
+ 25.00      0.07     0.03 10000000     0.00     0.00  fun2()
+ 16.67      0.09     0.02 10000000     0.00     0.00  fun()
+ 16.67      0.11     0.02                             _init
+  8.33      0.12     0.01        1    10.00    40.00  callRef()
+
+
+Overall, the -02 optimization flag reduces the computation time by a factor 
+of four.

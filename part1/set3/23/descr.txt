@@ -1,0 +1,7 @@
+We need a to write a program, that collapses repeated characters to only 
+single characters from a file read using input redirection. These characters
+can be standard printable characters and/or spaces or tab characters.
+
+Program wise, the input file will be read line-wise, and repeated characters
+will be deleted line by line. important is function handling, such that it is 
+clear what each function does

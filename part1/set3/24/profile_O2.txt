@@ -1,0 +1,10 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 66.67      0.02     0.02 10000000     0.00     0.00  fun2(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+ 33.33      0.03     0.01        1    10.00    10.00  callValue(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+  0.00      0.03     0.00 10000000     0.00     0.00  fun(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+  0.00      0.03     0.00        2     0.00     0.00  std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&)
+  0.00      0.03     0.00        1     0.00    20.00  callRef(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
