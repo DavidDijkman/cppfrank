@@ -1,8 +1,6 @@
 #include <string>
 
-#include "boundCall.ih"
-#include "combine.ih"
-#include "printRet.ih"
+#include "main.ih"
 
 void boundCall(int argc, char* argv[])
 {

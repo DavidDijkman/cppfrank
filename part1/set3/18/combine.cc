@@ -1,6 +1,6 @@
 #include <string>
 
-#include "combine.ih"
+#include "main.ih"
 
 using namespace std;
 

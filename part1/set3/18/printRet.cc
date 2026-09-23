@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "printRet.ih"
+#include "main.h"
 
 using namespace std;
 

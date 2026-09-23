@@ -1,3 +1,6 @@
+#ifndef INCLUDED_MAIN_IH_
+#define INCLUDED_MAIN_IH_
+
 #include <string>
 
 int wordCount();
@@ -5,3 +8,5 @@ int wordCount();
 int charCount();
 
 int lineCount();
+
+#endif
