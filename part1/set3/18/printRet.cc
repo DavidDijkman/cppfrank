@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "main.h"
+#include "main.ih"
 
 using namespace std;
 
