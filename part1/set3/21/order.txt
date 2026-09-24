@@ -1,7 +1,7 @@
 descr.txt
 main.ih
-main.cc
 printlist.cc
 tolowerstring.cc
 partition.cc
 quicksort.cc
+main.cc
