@@ -1,5 +1,5 @@
-#ifndef INCLUDED_COMBINE_IH_
-#define INCLUDED_COMBINE_IH_
+#ifndef INCLUDED_MAIN_IH_
+#define INCLUDED_MAIN_IH_
 
 #include <string>
 

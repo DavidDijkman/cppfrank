@@ -1,8 +1,10 @@
-#include "functions.h"
+#include "main.ih"
 
 bool containsChar(const std::string str, char charToFInd) {
-    for (char character : str) {
-        if (character == charToFInd) {
+    for (char character : str) 
+    {
+        if (character == charToFInd) 
+        {
             return true;
         }
     }

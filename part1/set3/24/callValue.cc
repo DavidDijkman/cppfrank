@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.ih" 
 
 void callValue(string const &prog)
 {

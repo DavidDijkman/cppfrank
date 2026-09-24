@@ -2,7 +2,7 @@
 
 using namespace std;
 
-#include "main.h" 
+#include "main.ih" 
 
 int main(int argc, char *argv[])
 {

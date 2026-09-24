@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.ih"
 
 void callRef(string const &prog)
 {

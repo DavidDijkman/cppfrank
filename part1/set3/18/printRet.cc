@@ -7,7 +7,8 @@ using namespace std;
 
 bool printRet(bool exists, size_t nr, string value)
 {
-    if (exists) {
+    if (exists) 
+    {
         cout << nr << " " << value << endl;
         return true;
     }

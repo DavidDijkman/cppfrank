@@ -4,4 +4,4 @@ can be standard printable characters and/or spaces or tab characters.
 
 Program wise, the input file will be read line-wise, and repeated characters
 will be deleted line by line. important is function handling, such that it is 
-clear what each function does
+clear what each function does.

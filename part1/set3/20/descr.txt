@@ -1,0 +1,2 @@
+We had to create a program that counts either the amount of characters, words, or lines in the input received from stdin.
+Which option we had to use depended on the first argument(-w, -l, or -c).

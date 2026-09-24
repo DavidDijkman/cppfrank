@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "main.ih"
 
 string processLine(const string line, const string charsToCollapse) 
 {

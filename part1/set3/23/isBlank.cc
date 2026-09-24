@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "main.ih"
 
 bool isBlank(char character) 
 {
