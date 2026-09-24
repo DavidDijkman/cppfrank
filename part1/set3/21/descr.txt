@@ -1,0 +1,2 @@
+We have to make a program that copies all environment variables into an array of strings. We then use a quicksort algorithm to sort the strings alphabetically, case insensitively, in place.
+Because the array length has to be fixed at compilation time, the array length is currently hardcoded at 59, which is the amount of environment variables on my(David's) device.

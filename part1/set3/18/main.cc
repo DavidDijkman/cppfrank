@@ -2,8 +2,6 @@
 #include <string>
 
 #include "main.ih"
-#include "structCall.ih"
-#include "boundCall.ih"
 
 using namespace std;
 

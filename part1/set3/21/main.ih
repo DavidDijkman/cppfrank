@@ -1,0 +1,18 @@
+#ifndef INCLUDED_MAIN_IH_
+#define INCLUDED_MAIN_IH_
+
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+void printList(string list[], size_t len);
+
+string toLowerString(const string& text);
+
+size_t partition(string list[], size_t left, size_t right);
+
+void quicksort(string list[], size_t left, size_t right);
+
+#endif  
