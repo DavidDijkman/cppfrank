@@ -1,3 +1,7 @@
+#ifndef INCLUDED_MAIN_IH_
+#define INCLUDED_MAIN_IH_
+
 int sum(int argc, char* argv[], int);        // Sum of integers
 double sum(int argc, char* argv[], double);  // Sum of doubles
 
+#endif
