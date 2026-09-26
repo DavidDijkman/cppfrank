@@ -10,6 +10,6 @@ void printList(string list[], size_t len)
 {
     for (size_t index = 0; index < len; index++)
     {
-        cout << list[index] << endl;
+        cout << list[index] << '\n';
     }
 }

@@ -18,11 +18,11 @@ int main(int argc, char* argv[]) {
 
     if (all_int) 
     {
-        cout << sum(argc, argv, 0) << endl;
+        cout << sum(argc, argv, 0) << '\n';
     } 
     else 
     {
-        cout << sum(argc, argv, 0.0) << endl;
+        cout << sum(argc, argv, 0.0) << '\n';
     }
 
     return 0;

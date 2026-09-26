@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 {
     if (argc < 2) 
     {
-        cout << "Usage: " << argv[0] << " int <string>" << endl;
+        cout << "Usage: " << argv[0] << " int <string>" << '\n';
         return 0;
     }
 

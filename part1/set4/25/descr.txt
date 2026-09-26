@@ -1,0 +1,30 @@
+Explaination of 'encapsulation' in the context of classes:
+Encapsulation means that the inside of the class is not visible to the
+outside, a class functions on its own and cannot be maniuplated by the
+ outside. The outside only communicates with the class through an interface. 
+
+ Explaination of 'data hiding' in the context of classes:
+ 'data hiding' is the technique used to realize encapsulation. Data members of
+ the class are declared private and inaccessible from outside the class. 
+ Data member's access is only allowed through member functions.
+
+Why are these concepts important to consider when building functions:
+As all data changes go through member functions, it is guaranteed that data 
+always remains in a valid state. Also, users only need to understand the 
+interface, improving the simplicity of use. 
+
+Small example of a self-defined class:
+
+#ifndef INCLUDED_TEMPERATURE_H_
+#define INCLUDED_TEMPERATURE_H_
+
+class smallClassInterface
+{
+    int counter;        // private: data hiding
+
+    public:
+        
+
+
+}
+#endif

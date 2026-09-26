@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 {
     if (argc < 2) 
     {
-        cout << "Add -c, -w, or -l" << endl;
+        cout << "Add -c, -w, or -l" << '\n';
         return 0;
     }
 
@@ -23,5 +23,5 @@ int main(int argc, char* argv[])
     else if (arg1 == "-l") 
         count = lineCount();
 
-    cout << count << endl;
+    cout << count << '\n';
 }
