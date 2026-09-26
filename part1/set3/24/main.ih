@@ -1,6 +1,7 @@
 #ifndef MAIN_IH
 #define MAIN_IH
 
+#include <iostream>
 #include <string>
 using namespace std;
 
