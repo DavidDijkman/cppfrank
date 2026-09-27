@@ -2,13 +2,10 @@
 
 #include "main.ih"
 
-using namespace std;
-
-double sum(int argc, char* argv[], double) {
+double sum(size_t argc, char* argv[], double) {
     double total = 0;
-    for (int i = 1; i < argc; i++) 
-    {
-        total += stod(argv[i]);
-    }
+    for (size_t idx = 1; idx < argc; ++idx) // sum all command-line arguments
+        total += stod(argv[idx]);
+        
     return total;
 }

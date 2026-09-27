@@ -1,23 +1,12 @@
 #include "main.ih"
 
-string processLine(const string line, const string charsToCollapse) 
+void processLine(string &line, string const &charsToCollapse) 
 {
-    string lineResult = line;
-
     for (char character : charsToCollapse) 
     {
-        if (containsChar(lineResult, character)) 
-        {
-            if (isBlank(character)) 
-            {
-                lineResult = collapsBlanks(lineResult);
-            }
-            else 
-            {
-                lineResult = collapsChar(lineResult, character);
-            }
-        } 
+        if (isBlank(character)) 
+            collapsBlanks(line);
+        else 
+            collapsChar(line, character);
     }
-    return lineResult;
-
 }

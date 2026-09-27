@@ -12,11 +12,11 @@ typedef struct ReturnValues
     string value;
 } ReturnValues;
 
-ReturnValues combine(int argc, char* argv[]);
+ReturnValues combine(size_t argc, char* argv[]);
 
-void boundCall(int argc, char* argv[]);
+void boundCall(size_t argc, char* argv[]);
 
-bool structCall(int argc, char* argv[]);
+bool structCall(size_t argc, char* argv[]);
 
 bool printRet(bool exists, size_t nr, string value);
 

@@ -2,14 +2,12 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-
 #include "main.ih"
 
 void printList(string list[], size_t len)
 {
-    for (size_t index = 0; index < len; index++)
+    for (size_t idx = 0; idx < len; idx++)
     {
-        cout << list[index] << '\n';
+        cout << list[idx] << '\n';
     }
 }

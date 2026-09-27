@@ -5,10 +5,10 @@
 
 using namespace std;
 
-bool containsChar(string line, char charToFInd);
+                    // erases repeated charsToCollapse from line
+void processLine(string &line, string const &charsToCollapse);
 bool isBlank(char character);
-string collapsBlanks(string line);
-string collapsChar(string line, char charToCollapse);
-string processLine(string line, string charsToCollapse);
+void collapsBlanks(string &line);   // erases repeated blanks
+void collapsChar(string &line, char charToCollapse); // erases repeated char
 
 #endif  

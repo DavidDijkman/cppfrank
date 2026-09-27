@@ -3,13 +3,11 @@
 
 #include "main.ih"
 
-using namespace std;
-
 int wordCount()
 {
-    int count = 0;
+    size_t count = 0;
     string word;
     while (cin >> word)
-        count++;
+        ++count;
     return count;
 }

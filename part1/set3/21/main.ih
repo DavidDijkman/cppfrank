@@ -9,7 +9,7 @@ using namespace std;
 
 void printList(string list[], size_t len);
 
-string toLowerString(const string& text);
+string toLowerString(string const &text);
 
 size_t partition(string list[], size_t left, size_t right);
 

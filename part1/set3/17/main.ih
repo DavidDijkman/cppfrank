@@ -1,7 +1,10 @@
 #ifndef INCLUDED_MAIN_IH_
 #define INCLUDED_MAIN_IH_
 
-int sum(int argc, char* argv[], int);        // Sum of integers
-double sum(int argc, char* argv[], double);  // Sum of doubles
+using namespace std;
+
+bool anyDecimal(size_t argc, char* argv[]);     // Check if any are decimal
+int sum(size_t argc, char* argv[], int);        // Sum of integers
+double sum(size_t argc, char* argv[], double);  // Sum of doubles
 
 #endif

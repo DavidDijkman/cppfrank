@@ -1,25 +1,22 @@
 #include "main.ih"
 
-string collapsBlanks(const string line) 
+void collapsBlanks(string &line) 
 {
-    string lineResult;
-    bool lastWasBlank = false;
-
-    for (char character : line) 
+    bool lastWasBlank = isBlank(line[0]);
+    size_t idx = 1;             // skip the first character
+    while (idx < line.size())   // line.size changes as we erase chars
     {
-        if (isBlank(character)) 
+                                // erase if repeated
+        if (isBlank(line[idx]) && lastWasBlank)
         {
-            if (!lastWasBlank) 
-            {
-                lineResult += ' ';
-            }
-            lastWasBlank = true;
-        } 
-        else 
-        {
-            lineResult += character;
-            lastWasBlank = false;
+            line.erase(idx, 1);
+            continue;
         }
+        
+        lastWasBlank = isBlank(line[idx]);
+        ++idx;                  // only iterate if we don't erase a char
     }
-    return lineResult;
 }
+
+// You could also do this with a string::iterator. But we were unsure
+// which would be preferred. the same is true for collapsChar.cc

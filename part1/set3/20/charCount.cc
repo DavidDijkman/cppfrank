@@ -2,13 +2,11 @@
 
 #include "main.ih"
 
-using namespace std;
-
 int charCount()
 {
-    int count = 0;
+    size_t count = 0;
     char dummy;
     while (cin.get(dummy))
-        count++;
+        ++count;
     return count;
 }

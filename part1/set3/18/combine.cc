@@ -4,9 +4,9 @@
 
 using namespace std;
 
-ReturnValues combine(int argc, char* argv[])
+ReturnValues combine(size_t argc, char* argv[])
 {
-    int req = stoul(argv[1]) - 1;
+    size_t req = stoul(argv[1]) - 1;
     
     ReturnValues ret;
     ret.exists = false;

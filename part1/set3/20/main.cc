@@ -9,11 +9,11 @@ int main(int argc, char* argv[])
 {
     if (argc < 2) 
     {
-        cout << "Add -c, -w, or -l" << '\n';
+        cout << "Add -c, -w, or -l\n";
         return 0;
     }
 
-    int count = 0;
+    size_t count = 0;
     string arg1 = argv[1];
 
     if (arg1 == "-c") 

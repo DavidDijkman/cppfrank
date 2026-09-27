@@ -1,6 +1,5 @@
 descr.txt
 main.ih
-containsChar.cc
 isBlank.cc
 collapsBlanks.cc
 collapsChar.cc

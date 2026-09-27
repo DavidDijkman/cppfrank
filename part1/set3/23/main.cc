@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 #include "main.ih"
 
 int main(int, char *argv[]) 
@@ -9,12 +7,9 @@ int main(int, char *argv[])
     string charsToCollapse = argv[1];
 
     string line;
-
-    while (getline(cin, line)) 
+    while (getline(cin, line))          // process input line by line
     {
-        line = processLine(line, charsToCollapse);
-        cout << line << "\n";
+        processLine(line, charsToCollapse);
+        cout << line << '\n';
     }
-
-    return 0;
 }

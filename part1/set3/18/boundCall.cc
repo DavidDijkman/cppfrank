@@ -2,7 +2,7 @@
 
 #include "main.ih"
 
-void boundCall(int argc, char* argv[])
+void boundCall(size_t argc, char* argv[])
 {
     auto [exists, nr, value] = combine(argc, argv);
 

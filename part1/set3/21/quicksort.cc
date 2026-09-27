@@ -6,14 +6,11 @@
 
 void quicksort(string list[], size_t left, size_t right)
 {
-    if (left >= right)
+    if (left >= right)          // <= 1 element, already sorted
         return;
 
-    size_t mid = partition(list, left, right);
+    size_t mid = partition(list, left, right); // arrange pivot
 
-    if (mid > left)
-        quicksort(list, left, mid);
-
-    if (mid < right)
-        quicksort(list, mid + 1, right);
+    quicksort(list, left, mid); // recursively apply for the two half-arrays
+    quicksort(list, mid + 1, right);
 }

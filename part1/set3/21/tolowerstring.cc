@@ -1,18 +1,14 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-
 #include "main.ih"
 
 string toLowerString(const string& text) 
 {
     string lower = "";
     
-    for (size_t index = 0 ; index < text.length() ; index++)
-    {
-        lower += tolower(text[index]);
-    }
+    for (size_t idx = 0 ; idx < text.length() ; idx++)
+        lower += tolower(text[idx]);
 
     return lower;
 }

@@ -11,12 +11,8 @@ int main(int argc, char *argv[], char *environ[])
     const size_t environ_len = 59;
     string list[59];
 
-    size_t index = 0;
-    while (environ[index] != nullptr && index < 59)
-    {
-        list[index] = environ[index];
-        ++index;
-    }
+    for (size_t idx = 0; idx < 59; ++idx)
+        list[idx] = environ[idx];
 
     quicksort(list, 0, environ_len);
 
