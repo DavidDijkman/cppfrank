@@ -8,10 +8,7 @@ ReturnValues combine(size_t argc, char* argv[])
 {
     size_t req = stoul(argv[1]) - 1;
     
-    ReturnValues ret;
-    ret.exists = false;
-    ret.nr = req;
-    ret.value = "";
+    ReturnValues ret{false, req, ""};
     
     if (req < argc) 
     {
