@@ -3,7 +3,7 @@
 
 #include "main.ih"
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
 
                         // check if any arguments contain a decimal point
     bool all_int = anyDecimal(argc, argv);

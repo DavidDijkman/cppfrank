@@ -3,7 +3,7 @@
 
 #include "main.ih"
 
-bool anyDecimal(size_t argc, char const *argv[])
+bool anyDecimal(size_t argc, char const *const argv[])
 {
     bool all_int = true;
 
@@ -13,17 +13,10 @@ bool anyDecimal(size_t argc, char const *argv[])
         string arg = argv[idx];
         if (arg.find('.'))          
         {
-            all_int = false;
+            all_int = false; // any decimal point makes the list not all_int
             break;
         }
     }
 
     return all_int;
 }
-
-
-// The function will check if any of the arguments contain a decimal point. 
-// The function will return a boolean that is true, if neither of the 
-// arguments contain a decimal point and are of int type. A boolean of false
-// will be returned if any of the arguments contain a decimal point and are
-// of float type.  

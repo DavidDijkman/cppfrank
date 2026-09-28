@@ -3,8 +3,14 @@
 
 using namespace std;
 
-bool anyDecimal(size_t argc, char const *argv[]);     // Check if any are decimal
-int sum(size_t argc, char const *argv[], int);        // sum1.cc - Sum of integers
-double sum(size_t argc, char const *argv[], double);  // sum2.cc - Sum of doubles
+                        // We are unsure if char const *const argv[] is
+                        // prefered over just char *argv[] when passing down
+                        // cl arguments, we've done it for ex17, but 
+                        // left it out for others.
+bool anyDecimal(size_t argc, char const *const argv[]);
+                        // sum1.cc - sum of integers
+int sum(size_t argc, char const *const argv[], int); 
+                        // sum2.cc - sum of doubles
+double sum(size_t argc, char const *const argv[], double);  
 
 #endif
