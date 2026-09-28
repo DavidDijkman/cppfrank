@@ -4,7 +4,7 @@
 using namespace std;
 
 bool anyDecimal(size_t argc, char* argv[]);     // Check if any are decimal
-int sum(size_t argc, char* argv[], int);        // Sum of integers
-double sum(size_t argc, char* argv[], double);  // Sum of doubles
+int sum(size_t argc, char* argv[], int);        // sum1.cc - Sum of integers
+double sum(size_t argc, char* argv[], double);  // sum2.cc - Sum of doubles
 
 #endif
