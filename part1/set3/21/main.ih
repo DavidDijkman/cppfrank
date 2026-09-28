@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void printList(string list[], size_t len);
+void printList(string const list[], size_t len);
 
 string toLowerString(string const &text);
 

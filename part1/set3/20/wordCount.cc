@@ -3,7 +3,7 @@
 
 #include "main.ih"
 
-int wordCount()
+size_t wordCount()
 {
     size_t count = 0;
     string word;

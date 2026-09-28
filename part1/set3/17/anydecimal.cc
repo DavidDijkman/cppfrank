@@ -3,7 +3,7 @@
 
 #include "main.ih"
 
-bool anyDecimal(size_t argc, char *argv[])
+bool anyDecimal(size_t argc, char const *argv[])
 {
     bool all_int = true;
 

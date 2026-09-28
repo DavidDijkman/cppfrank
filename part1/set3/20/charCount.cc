@@ -2,7 +2,7 @@
 
 #include "main.ih"
 
-int charCount()
+size_t charCount()
 {
     size_t count = 0;
     char dummy;

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-ReturnValues combine(size_t argc, char* argv[])
+ReturnValues combine(size_t argc, char const *argv[])
 {
     size_t req = stoul(argv[1]) - 1;
     

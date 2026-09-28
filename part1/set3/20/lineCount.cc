@@ -3,7 +3,7 @@
 
 #include "main.ih"
 
-int lineCount()
+size_t lineCount()
 {
     size_t count = 0;
     string dummy;

@@ -3,11 +3,11 @@
 
 #include "main.ih"
 
-bool printRet(bool exists, size_t nr, string value)
+bool printRet(bool exists, size_t nr, string const &text)
 {
     if (exists) 
     {
-        cout << nr << ' ' << value << '\n';
+        cout << nr << ' ' << text << '\n';
         return true;
     }
     

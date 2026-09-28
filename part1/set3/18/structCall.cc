@@ -2,7 +2,7 @@
 
 #include "main.ih"
 
-bool structCall(size_t argc, char* argv[]) 
+bool structCall(size_t argc, char const *argv[]) 
 {
     ReturnValues ret = combine(argc, argv);
 
