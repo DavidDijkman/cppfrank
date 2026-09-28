@@ -2,8 +2,13 @@
 
 #include "main.ih"
 
-int main(int, char *argv[]) 
+int main(int argc, char *argv[]) 
 {
+    if (argc < 2)
+    {
+        usage(argv[0]);
+        return 1;
+    }
     string charsToCollapse = argv[1];
 
     string line;

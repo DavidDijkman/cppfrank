@@ -5,6 +5,12 @@
 
 int main(int argc, char *argv[]) {
 
+    if (argc < 2)
+    {
+        usage(argv[0]);
+        return 1;
+    }
+
                         // check if any arguments contain a decimal point
     bool all_int = anyDecimal(argc, argv);
 

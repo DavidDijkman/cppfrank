@@ -9,10 +9,11 @@ using namespace std;
 
 void printList(string const list[], size_t len);
 
-string toLowerString(string const &text);
+                    // returns copy of string without upper case letters
+string toLowerString(string const &text); 
 
 size_t partition(string list[], size_t left, size_t right);
-
+                    // sorts an array of strings alphanumerically in place
 void quicksort(string list[], size_t left, size_t right);
 
 #endif  

@@ -3,6 +3,8 @@
 
 using namespace std;
 
+void usage(string const &programName);
+
                         // We are unsure if char const *const argv[] is
                         // prefered over just char *argv[] when passing down
                         // cl arguments, we've done it for ex17, but 

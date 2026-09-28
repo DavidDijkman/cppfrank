@@ -5,6 +5,8 @@
 
 using namespace std;
 
+void usage(string const &programName);
+
                     // erases repeated charsToCollapse from line in place
 void processLine(string &line, string const &charsToCollapse);
 bool isBlank(char character);

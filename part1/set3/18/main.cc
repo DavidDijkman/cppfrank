@@ -9,8 +9,8 @@ int main(int argc, char* argv[])
 {
     if (argc < 2)           // exit early if no arguments are given
     {
-        cout << "Usage: " << argv[0] << " int <string>" << '\n';
-        return 0;
+        usage(argv[0]);
+        return 1;
     }
 
     structCall(argc, argv);

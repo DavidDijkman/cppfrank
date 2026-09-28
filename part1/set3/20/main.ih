@@ -3,6 +3,7 @@
 
 using namespace std;
 
+void usage(string const &programName);
 size_t wordCount();
 size_t charCount();
 size_t lineCount();
