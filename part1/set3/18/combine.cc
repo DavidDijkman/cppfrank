@@ -10,7 +10,7 @@ ReturnValues combine(size_t argc, char* argv[])
     
     ReturnValues ret{false, req, ""};
     
-    if (req < argc) 
+    if (req < argc)         // check if index is in range and modify struct
     {
         ret.exists = true;
         ret.value = argv[req];
@@ -18,3 +18,8 @@ ReturnValues combine(size_t argc, char* argv[])
 
     return ret;
 }
+
+// Function takes arguments with first argument an string type, which 
+// is converted to an unsigned long. The function checks whether the index of
+// this argument is in range of all arguments. A struct is returned whether 
+// this is the case or not.

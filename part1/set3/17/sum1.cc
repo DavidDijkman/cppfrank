@@ -10,3 +10,5 @@ int sum(size_t argc, char* argv[], int) {
     return total;
 }
 
+// Overloaded function of sum which takes int types as arguments and returns
+// and returns the sum of all arguments.

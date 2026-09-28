@@ -2,7 +2,6 @@ In the exercise, we will get experience with profiling. First, the code is
 transformed according to the one-function-one-source rule. The aim is to test 
 results of different profiling optimization flags. 
 
-
 What do different (-o0, -o1, -o2, -o3) optimization flags do?
 -o0: No optimization, minimum of compile time
 -o1: Basic optimizations with smaller increase of compile time

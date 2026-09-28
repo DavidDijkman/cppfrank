@@ -1,4 +1,6 @@
-The exercise asked us to make a combine function, which returned a structure defining whether the n'th argument existed, and if so, its index and value.
-This function had to be used in both the structCall and boundCall functions which used the returned struct from combine in different ways.
+The exercise asks us to make a combine function, which returns a structure 
+defining whether the n'th argument exists, and if so, its index and value.
+This function had to be used in both the structCall and boundCall functions
+ which used the returned struct from combine in different ways.
 
 If no arguments are given, a usage message had to be printed.
