@@ -1,6 +1,9 @@
 #ifndef INCLUDED_MAIN_IH_
 #define INCLUDED_MAIN_IH_
 
+#include <iostream>
+#include <string>
+
 using namespace std;
 
 void usage(string const &programName);

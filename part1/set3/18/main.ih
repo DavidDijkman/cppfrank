@@ -5,12 +5,12 @@
 
 using namespace std;
 
-typedef struct ReturnValues
+struct ReturnValues
 {
     bool exists;
     size_t nr;
     string value;
-} ReturnValues;
+};
 
 void usage(string const &programName);
 

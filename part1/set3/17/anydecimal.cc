@@ -1,6 +1,3 @@
-#include <iostream>
-#include <cstring>
-
 #include "main.ih"
 
 bool anyDecimal(size_t argc, char const *const argv[])

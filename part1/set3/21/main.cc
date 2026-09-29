@@ -6,8 +6,10 @@ using namespace std;
 
 #include "main.ih"
 
-int main(int argc, char *argv[], char *environ[]) 
+int main(int argc, char *argv[]) 
 {
+    extern char *environ[];
+
     const size_t environ_len = 59;
     string list[59];
 

@@ -1,5 +1,3 @@
-#include <iostream>
-
 #include "main.ih"
 
 void usage(string const &programName)
