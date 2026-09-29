@@ -14,17 +14,3 @@ always remains in a valid state. Also, users only need to understand the
 interface, improving the simplicity of use. 
 
 Small example of a self-defined class:
-
-#ifndef INCLUDED_TEMPERATURE_H_
-#define INCLUDED_TEMPERATURE_H_
-
-class smallClassInterface
-{
-    int counter;        // private: data hiding
-
-    public:
-        
-
-
-}
-#endif
