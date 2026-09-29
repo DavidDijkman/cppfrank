@@ -5,7 +5,7 @@
 void usage(string const &programName)
 {
     cout << "Usage: " << programName << " toCollapse\n"
-        "Where:\n\ttoCollapse - sting containing all characters"
+        "Where:\n\ttoCollapse - string containing all characters"
         " that should have repeats collapsed(including a space"
         " collapses all blank characters\n";
 }
