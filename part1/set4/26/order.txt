@@ -1,0 +1,17 @@
+preamble.txt
+person/person.ih
+person/address.cc
+person/extract.cc
+person/hasonly.cc
+person/insert.cc
+person/mass.cc
+person/name.cc
+person/person1.cc
+person/person2.cc
+person/phone.cc
+person/setaddress.cc
+person/setmass.cc
+person/setname.cc
+person/setphone.cc
+person/trim.cc
+main.cc

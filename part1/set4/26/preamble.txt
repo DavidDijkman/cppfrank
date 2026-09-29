@@ -1,0 +1,4 @@
+We need to recreate the Person class from the C++ Annotations, and add two member functions
+insert: expects an std::ostream and prints the data of the object into this output stream.
+extract: expects an std::istream and assigns the object data based on the comma-separated input
+	from the specified input
