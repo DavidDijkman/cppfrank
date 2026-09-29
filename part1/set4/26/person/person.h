@@ -13,27 +13,33 @@ class Person
 
 
     public:
-        Person();           //person1.cc
-                            //person2.cc
+        Person();           // person1.cc
+                            // person2.cc
         Person(std::string const &name, std::string const &address,
                std::string const &phone, size_t mass);
         
+                            // modifiers
         void setName(std::string const &name);
         void setAddress(std::string const &address);
         void setPhone(std::string const &phone);
         void setMass(size_t size);
 
+                            // accessors
         std::string const &name()           const;
         std::string const &address()        const;
         std::string const &phone()          const;
         size_t mass()                       const;
 
-        void insert(std::ostream &output)  const;
+                            // prints object data to output stream
+        void insert(std::ostream &output)   const;
+                            // extracts data members from input stream
         void extract(std::istream &input);
         
 
     private:
+                            // checks if string contains ONLY 'characters'
         bool hasOnly(char const *characters, std::string const &object) const;
+                            // removes whitespace from start and end of string
         void trim(std::string &text)        const;
 };
         

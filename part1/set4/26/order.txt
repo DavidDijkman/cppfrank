@@ -14,4 +14,4 @@ person/setmass.cc
 person/setname.cc
 person/setphone.cc
 person/trim.cc
-main.cc
+!main.cc
