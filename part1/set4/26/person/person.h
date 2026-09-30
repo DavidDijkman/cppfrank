@@ -6,10 +6,10 @@
 
 class Person
 {
-    std::string d_name;         // name of person
-    std::string d_address;      // address field
-    std::string d_phone;        // phone number
-    size_t      d_mass;         // mass in kg
+    std::string d_name;
+    std::string d_address;
+    std::string d_phone;
+    size_t      d_mass;     // mass in kg
 
 
     public:
