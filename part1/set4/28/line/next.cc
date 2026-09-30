@@ -5,27 +5,13 @@ string Line::next()
     if (d_pos == string::npos)  // return empty string if no substr available.
         return "";
 
-                        // length of non-ws substring
-    size_t substr_len = d_line.substr(d_pos).find_first_of(" /t/n");
-                        // substring reaches from d_pos to d_pos + substr_len
-    string result = (substr_len == string::npos         ?
-                    d_line.substr(d_pos)                :
-                    d_line.substr(d_pos, substr_len));    
+    size_t start = d_pos;
 
-                        // set d_pos to new starting position
-    if (substr_len == string::npos) // if substr reaches till end of string
-    {                               // we return early
-        d_pos = string::npos;
-        return result;
-    }
-                        // compute length of whitespace after substring
-    size_t ws_len = d_line.substr(d_pos + substr_len)
-                          .find_first_not_of(" /t/n");
-    
-                        // last check if a new substring is available
-    d_pos = (ws_len == string::npos    ?
-            string::npos               :
-            d_pos + substr_len + ws_len);
+                                // end of substring
+    size_t end = d_line.find_first_of(" \t\n", start);
+                        
+                                // find the start of the next substring
+    d_pos = d_line.find_first_not_of(" \t\n", end);
 
-    return result;
+    return d_line.substr(start, end - start);
 }
