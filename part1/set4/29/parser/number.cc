@@ -2,10 +2,10 @@
 
 Parser::Return Parser::number(double *dest)
 {
-    string new_line = d_line.next();
+    string token = d_line.next();
 
-    if (new_line.empty())
+    if (token.empty())
         return Parser::Return::EOLN;
 
-    return convert(dest, new_line);
+    return convert(dest, token);
 }
