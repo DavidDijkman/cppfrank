@@ -8,7 +8,7 @@ void Person::extract(istream &input)
     getline(input, d_name, ',');    
     getline(input, d_address, ',');
     getline(input, phone_buf, ',');
-    getline(input, mass_buf, ',');
+    getline(input, mass_buf);
 
     trim(d_name);             // remove starting and ending blank chars
     trim(d_address);          // from data fields
