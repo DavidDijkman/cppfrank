@@ -5,9 +5,8 @@
 
 class Line
 {
-
-    std::string d_line;
-    size_t d_pos;
+    std::string d_line;     // holds line obtained from std::cin
+    size_t d_pos;           // keeps track of start of non-ws substring
 
     public:
         Line();
