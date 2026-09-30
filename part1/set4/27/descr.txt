@@ -1,0 +1,4 @@
+We are asked to use the function from exercise 26. The program should (1) 
+define an array of 5 person objects, (2) call a function reading all data from
+the class from the standard input stream and (3) call a function writing
+all of the class's data to the standard output stream. 
