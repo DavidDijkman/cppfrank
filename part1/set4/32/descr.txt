@@ -1,0 +1,72 @@
+We need to examine compilation time differences by using different ways of
+constructing the program. We will do a plain compilation, and different 
+variations of precompiled headers. 
+
+We will be timing the compilation time using time icmbuild. 
+In between each compilation, we use icmbuild clean to have a clean start
+
+- Plain compilation of the program
+We get the following result:
+real    4m14.880s
+user    3m9.242s
+sys     0m19.841s
+
+
+- Compilation of the program using precompiled headers
+We uncomment #define PRECOMP    "-x c++-header" in icmconf and we get this
+ result:
+real    7m9.857s
+user    2m2.775s
+sys     0m51.696s
+
+We find the following sizes of .gch files:
+81M     ./tmp/gch/arg.ih.gch
+94M     ./tmp/gch/datetime.ih.gch
+64M     ./tmp/gch/exception.ih.gch
+52M     ./tmp/gch/iuo.ih.gch
+76M     ./tmp/gch/keys.ih.gch
+73M     ./tmp/gch/main.ih.gch
+69M     ./tmp/gch/mbuf.ih.gch
+69M     ./tmp/gch/mstream.ih.gch
+60M     ./tmp/gch/string.ih.gch
+74M     ./tmp/gch/student.ih.gch
+94M     ./tmp/gch/students.ih.gch
+
+This sums to about 800 MB total.
+
+- Compilation of the program using single precompiled header
+Now we uncomment #define SPCH    "" and get:
+real    6m58.957s
+user    4m57.266s
+sys     0m32.641s
+
+Now we only find that only ./tmp/spch.gch is the only .gch file
+taking storage space and has a filesize of 59MB.
+
+- Compilation of the program using a SPCH and all CPUs
+We uncomment #define MULTICOMP "jobs -q" in icmconf, run with ccache G++ as 
+compiler and get:
+real    1m43.883s
+user    8m50.396s
+sys     0m56.032s
+
+- Remove compilation results of previous compile and redo compilation:
+real    0m13.157s
+user    0m1.464s
+sys     0m5.590s
+
+
+- Conclusions
+Before writing our conclusions, a short note about the differences between 
+real, user and sys: real is the computation time before finishing. user is the
+ computation time taken by CPUs. sys is time spent in Kernel space. In case of
+  single-threading, real is approximately equal to the sums of user and sys. 
+
+First, we observe that plain compilation is faster than compilation using 
+precompiled header files. The compilation using precompiled header files takes
+a similar amount of time as using an SPCH. The storage of using multiple 
+precompiled header files is much larger than a single SPCH. Precompiled 
+headers reduce CPU time, but introduce heavey IO bottlenecks due to writing
+of large .gch files. Multithreading reduces compilation time significantly,
+and when using ccache G++ the compilation time can be significantly reduced
+again. 

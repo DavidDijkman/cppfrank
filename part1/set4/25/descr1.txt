@@ -1,0 +1,9 @@
+The interface of the class shows both:
+- Encapsulation: The dimensions (data) and the computation (functions)
+ of the volume are bundled together into the single type Volume.
+Inner parts and implementation details are kept separate from its
+outer level.
+
+- Data Hiding: Data members are private and cannot be accessed.
+To allow reading of the values, one can do it through the const
+accessor functions.
