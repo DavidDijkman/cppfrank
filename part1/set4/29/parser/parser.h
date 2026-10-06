@@ -1,6 +1,10 @@
 #ifndef INCLUDED_PARSER_
 #define INCLUDED_PARSER_
 
+#include <string>
+#include "../line/line.h"
+
+class Line;
 
 class Parser
 {

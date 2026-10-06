@@ -1,0 +1,15 @@
+preamble.txt
+-line/line.ih
+-line/line.h
+-line/getline.cc
+-line/line1.cc
+-line/next.cc
+parser/parser.ih
+parser/parser.h
+parser/convert.cc
+parser/isintegral.cc
+parser/next.cc
+parser/number.cc
+parser/parser1.cc
+parser/puredouble.cc
+parser/reset.cc

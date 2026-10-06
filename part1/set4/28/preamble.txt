@@ -1,0 +1,1 @@
+We are asked to create a Line class, which reads a line from std::cin, and has a member function to return the next substring of non-whitespace characters.

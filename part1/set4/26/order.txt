@@ -1,5 +1,6 @@
 preamble.txt
 person/person.ih
+person/person.h
 person/address.cc
 person/extract.cc
 person/hasonly.cc
@@ -14,4 +15,4 @@ person/setmass.cc
 person/setname.cc
 person/setphone.cc
 person/trim.cc
-!main.cc
+-main.cc

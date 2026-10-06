@@ -1,8 +1,0 @@
-#include "parser.h"
-
-#include <string>
-
-#include "line/line.h"
-
-using namespace std;
-

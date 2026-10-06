@@ -8,7 +8,7 @@ using namespace std;
 class Volume
 {
     // Private data members
-    string d_shape = "box"          
+    string d_shape = "box";       
     size_t d_length = 0;
     size_t d_width = 0;
     size_t d_height = 0;

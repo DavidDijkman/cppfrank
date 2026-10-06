@@ -8,7 +8,7 @@ int main()
     Line line;
     line.getLine();
 
-    while (true)
+    while (true) // print out all non-ws substrings
     {
         std::string text = line.next();
         if (text.empty())

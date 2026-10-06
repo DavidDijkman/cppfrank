@@ -1,7 +1,0 @@
-#include "calculator.h"
-
-#include "line/line.h"
-#include "parser/parser.h"
-
-using namespace std;
-

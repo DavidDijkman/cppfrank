@@ -1,0 +1,1 @@
+We are asked to create a class with the pbers and strings. It includes a number method which interprets the next non-whitespace substring as a number, and a next() method which just returns the next non-whitespace substring.
