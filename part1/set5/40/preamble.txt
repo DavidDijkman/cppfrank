@@ -1,0 +1,14 @@
+We are asked to answer a few questions about the pimpl approach.
+
+Why breaks the program after creating the new library in step 2 of the previous exercise?
+Because when main.o was compiled data.h (which main includes) had a different 
+data/members list. This means that the names the compiler gave these do not 
+align with the new exposed endpoints of the library.
+
+Why doesn't the program break anymore when using a pointer to the implementation?
+simply because data.h doesn't change anymore, thus the ABI is consistent.
+
+... How can these additional data members be added to your class without breaking the ABI?
+It seems a good rule of thumb to make any class that is used by outside users
+use the pimpl approach. This way you can add whatever internal data and
+members without worrying about your users getting angry.
