@@ -1,0 +1,58 @@
+We are asked to fill in the pointer notation and semantics sections of the 
+following table:
+
+----------------------------------------------------------------------------
+  definition:         rewrite: 
+----------------------------------------------------------------------------
+  int x[8];           x[2] = x[3];
+
+pointer notation:  *(x + 2) = *(x + 3)
+       semantics:  We rewrite the 2nd int beyond x to be the same as the 3rd
+                   int beyond x.
+----------------------------------------------------------------------------
+  char *argv[8];      cout << argv[2];
+
+pointer notation:  cout << *(argv + 2)
+       semantics:  We print the 2nd char pointer beyond argv to standard
+                   output.
+----------------------------------------------------------------------------
+  int x[8];           &x[10] - &x[3];
+ 
+pointer notation:  &*(x + 10) - &*(x + 3) = (x + 10) - (x + 3) = 7
+       semantics:  The reference and dereference operator cancel out and we
+                   obtain the difference between the pointers pointing to the
+                   10th and 3rd value beyond x, which is just 10 - 3 = 7.
+                   It is of note that x[10] has not been allocated for, so if
+                   it were actually accessed that results in a segmentation 
+                   fault.
+----------------------------------------------------------------------------
+  main's argv;        argv++[0];
+
+pointer notation:  *(argv++ + 0)
+       semantics:  This dereferences argv, and afterwards increments argv.
+                   this returns the old value of argv[0], since postfix ++ 
+                   evaluates to the original
+----------------------------------------------------------------------------
+  main's argv;        argv[0]++;
+
+pointer notation:  *(argv + 0)++
+       semantics:  this increments the char pointer at argv[0]. The expression
+                   evaluates to argv[0] as per the previous example
+----------------------------------------------------------------------------
+  main's argv;        ++argv[0];
+
+pointer notation:  ++*(argv + 0)
+       semantics:  this increments the char pointer at argv[0]. The expression
+                   evaluates to the newly incremented value of argv[0], since
+                   prefix ++ evaluates to the new value.
+----------------------------------------------------------------------------
+  main's argv;        ++argv[0][2];
+
+pointer notation:  ++*(*(argv + 0) + 2)
+       semantics:  This increments the second character of the first string in
+                   argv. The expression evaluates to the the new character 
+                   because of prefix ++
+----------------------------------------------------------------------------
+
+source for finding operator precedence between [] and ++:
+en.cppreference.com/cpp/language/operator_precedence

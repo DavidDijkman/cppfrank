@@ -1,0 +1,11 @@
+We are asked to find a flaw in the design of the PhoneBook class.
+
+We can see from the PhoneBook constructor makes a few calls to s_finder. 
+However, it is not gauranteed that s_finder is initialized by the time the 
+constructor is called. The constructor runs before main() is run, and it is 
+not certain that the static data s_finder is initialized before the global 
+PhoneBook will be initialized. This is undefined behaviour.
+
+To negate this flaw, you could either use a private accessor for finder, or
+just make phonebook a singleton, so the constructor is not run before main, 
+but still kind of acts like a global object.

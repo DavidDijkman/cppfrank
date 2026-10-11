@@ -1,0 +1,1 @@
+We are asked to write the constructors for the CopyCat clasopies of the input array of NTBSs. the default constructor makes a copy of the environ array.

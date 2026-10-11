@@ -1,0 +1,64 @@
+We are asked to first compile and link a program in separate stages and check
+if it runs OK. Then we must change the class declaration in the library 
+without recompiling main, to see that that causes issues. Finally we will
+make an implementation class to make the library safe to internal changes 
+(private data and members at least).
+
+# Stage 1.1 : initial compilation and linking
+
+~terminal~/39/data$ g++ -c main.cc
+~terminal~/39/data/data$ g++ -c *.cc
+~terminal~/39/data$ ar rcs libdata.a data/*.o
+~terminal~/39/data$ g++ main.o libdata.a -o main1
+~terminal~/39/data$ ./main1 < data.in
+Object 1: value is: 1
+Object 2: value is: 2
+Object 3: value is: 3
+Object 4: value is: 4
+
+OK!
+
+# Stage 1.2 : changing class declaration
+
+~terminal~/39/data$ rm libdata.a 
+~terminal~/39/data$ rm data/*.o
+// uncommented d_text declaration
+~terminal~/39/data/data$ g++ -c *.cc
+~terminal~/39/data$ ar rcs libdata.a data/*.o
+~terminal~/39/data$ g++ main.o libdata.a -o main2
+~terminal~/39/data$ ./main2 < data.in
+Segmentation fault (core dumped)
+
+Not OK!
+
+Stage 2.1 : stage 1.1 but using Imp class
+
+
+~terminal~/39/data/data/dataimp$ g++ -c *.cc
+~terminal~/39/data/data$ g++ -c *.cc
+~terminal~/39/data$ ar rcs libdata.a data/*.o data/dataimp/*.o
+~terminal~/39/data$ g++ -c main.cc
+~terminal~/39/data$ g++ main.o libdata.a -o main3
+~terminal~/39/data$ ./main3 < data.in
+Object 1: value is: 1
+Object 2: value is: 2
+Object 3: value is: 3
+Object 4: value is: 4
+
+OK!
+
+# Stage 4 : uncomment d_text and its use
+~terminal~/39/data$ rm libdata.a 
+~terminal~/39/data$ rm data/*.o
+~terminal~/39/data$ rm data/dataimp/*.o
+~terminal~/39/data/data/dataimp$ g++ -c *.cc
+~terminal~/39/data/data$ g++ -c *.cc
+~terminal~/39/data$ ar rcs libdata.a data/*.o data/dataimp/*.o
+~terminal~/39/data$ g++ main.o libdata.a -o main4
+~terminal~/39/data$ ./main4 < data.in
+Object 1: value is: 1
+Object 2: value is: 2
+Object 3: value is: 3
+Object 4: value is: 4
+
+OK!
