@@ -1,0 +1,5 @@
+We are asked to create a class that counts the number
+of characters per character from a text file in the input stream.
+The result is returned in a struct with the characters and number
+of each character. Main goal is to create a pointer
+to a number of character elements, based on the input. 
