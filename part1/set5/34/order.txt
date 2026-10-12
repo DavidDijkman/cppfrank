@@ -1,9 +1,9 @@
 preamble.txt
 copycat/copycat.h
 copycat/copycat.ih
+copycat/copycat1.f
 copycat/copycat2.cc
 copycat/copycat3.cc
 copycat/duplicate.cc
 copycat/nelements.cc
 copycat/ntbscopy.cc
--main.cc

@@ -1,13 +1,12 @@
 preamble.txt
 data/data.h
--data/data.ih
+data/data.ih
 data/data1.cc
 data/display.cc
 data/read.cc
-data/dataimp/data.h
--data/dataimp/data.ih
-data/dataimp/data1.cc
-data/dataimp/display.cc
-data/dataimp/read.cc
+dataimp/dataimp.h
+dataimp/dataimp.ih
+dataimp/display.cc
+dataimp/read.cc
 -main.cc
 

@@ -19,4 +19,5 @@ See email.
 - what is meant by `pointer arithmetic';
 If you add or subtract an integer to a pointer, it moves by this number of 
 elements. Hence, it is only meaningful within the array that the pointer 
-points to.
+points to. You can also subtract pointers from each other to obtain the
+difference between two addresses.

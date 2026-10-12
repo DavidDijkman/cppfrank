@@ -6,7 +6,8 @@ data/members list. This means that the names the compiler gave these do not
 align with the new exposed endpoints of the library.
 
 Why doesn't the program break anymore when using a pointer to the implementation?
-simply because data.h doesn't change anymore, thus the ABI is consistent.
+simply because data.h doesn't change anymore when changing the implementation 
+the Data class, thus the ABI is consistent.
 
 ... How can these additional data members be added to your class without breaking the ABI?
 It seems a good rule of thumb to make any class that is used by outside users
