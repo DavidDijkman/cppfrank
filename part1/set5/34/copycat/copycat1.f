@@ -1,5 +1,3 @@
-#include "copycat.ih"
-
 extern char **environ;
 
 inline CopyCat::CopyCat()
