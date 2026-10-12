@@ -1,0 +1,22 @@
+We are asked to answer questions related to pointers.
+- what differences exist between pointer variables and arrays;
+A pointer to a variable stores an address, and allows dynamic memory 
+allocation. So, you can reassign a pointer such that the pointer points at 
+something else. 
+In contrast, arrays store a fixed block of memory and its size and location
+are fixed at declaration. 
+
+- what differences exist between pointer variables and reference variables;
+As said, a pointer is a variable holding an address. A reference is an alias 
+for another variable, it cannot be null unlike a pointer and cannot changed
+to another object.
+
+- how element [3][2] is reached :
+        a: for the variable `int array[20][30]'
+        b: for the variable `int *pointer[20]'.
+See email.
+
+- what is meant by `pointer arithmetic';
+If you add or subtract an integer to a pointer, it moves by this number of 
+elements. Hence, it is only meaningful within the array that the pointer 
+points to.
