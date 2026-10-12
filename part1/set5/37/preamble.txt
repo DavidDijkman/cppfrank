@@ -1,0 +1,37 @@
+We are asked to write syntax for different declarations of variables and 
+functions. They are written below.  
+
+// Declare pointer ptr1 to rows of 8 doubles
+double (*ptr1)[8];
+
+// Declare variable ptr2 pointing to an array holding
+// addresses of series of doubles
+double **ptr2;
+
+// Declare pointer that may point to arrays of immutable pointers to 
+// arrays of mutable pointers to immutable string objects
+string const *const **ptr3;
+
+// Declare function fun returning 6x6 string objects
+string (*fun())[6];
+
+// Declare function fun2 using defined typedef StringMat
+using StringMat = string (*)[6];
+StringMat fun2;
+
+// Complete function 
+void process(unsigned begin, unsigned end, char const *const *args)
+{
+    for 
+    (
+        char const *const *argsBegin = args + begin, 
+                    *const *argsEnd   = args + end;
+        argsBegin != argsEnd;
+        ++argsBegin
+    )
+        process(*argsBegin);
+}
+
+// Declare a function fun3 defining ptr which is an immutable pointer to 
+// NTBSs, returning one of these pointers as an immutable NTBS
+char const *fun(char const *const ptr);
