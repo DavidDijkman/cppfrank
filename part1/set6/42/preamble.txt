@@ -1,0 +1,33 @@
+We are asked to explain the variants of new/delete and give short examples
+for their use.
+
+1. new              | demo1.cc
+new allocates memory for the requested object or array of objects and calls 
+the constructor to initialize the object(s) in the allocated memory.
+The example shows new being used to allocate memory for a single int.
+
+2. operator new     | demo3.cc
+operator new allocates new memory, but doesn't construct anything inside it.
+The example shows operator being used to allocate raw memory, after which the
+returned pointer is casted to a string pointer.
+
+3. placement new    | demo3.cc
+placement new is used to construct an object at a desired location in already 
+allocated memory. The example shows a string being constructed at a specific
+memory address in previously allocated memory.
+
+4. delete           | demo1.cc
+delete calls the destructor of the pointed-to object and subsequently
+de-allocates the memory that object used to occupy. The example shows delete 
+being called on a pointer to a previously initialized object, destructing it 
+and de-allocating the memory.
+
+5. delete[]         | demo2.cc
+delete[] is called on a previously allocated array and does the steps for 
+delete (see above) for all objects in that array. The example shows this 
+being done on a previously allocated array of ints.
+
+6. operator delete  | demo3.cc
+de-allocates memory allocated by operator new. The example shows operator 
+delete being used to do exactly this, after destructing all objects contained
+within that memory, as operator delete does not do that for you.
