@@ -1,0 +1,13 @@
+#ifndef MAIN_IH_
+#define MAIN_IH_
+
+#include "symtab/symtab.h"
+#include "symbol/symbol.h"
+#include "value/value.h"
+
+#include <iostream>
+#include <string>
+
+using namespace std; 
+
+#endif

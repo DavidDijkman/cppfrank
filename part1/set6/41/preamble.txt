@@ -1,4 +1,4 @@
-We are asked to modify to existing charcount class, such that a storage 
-capacity is defined, and being doubled when the maximum storage is reached. 
-When enlarging the storage, the existing data is being copied to the new data
-storage.
+We are asked to modify to existing charcount class, such that an allocated
+memory capacity is defined, and being doubled when the maximum storage is 
+reached. When enlarging the allocated memory, the existing data is being
+copied to the new data storage. An array of pointers to memory is used.
