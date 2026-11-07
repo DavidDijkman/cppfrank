@@ -32,7 +32,11 @@ we are also asked to answer the following questions:
 
 - Why does Strings' interface have two at members declared?
 
+It is an overloaded member function. One is for if the object it is being 
+called from is const, the other is used if it isn't const
+
 - Which one is used in the provided main function?
+The non-const version, since the Strings object is not declared as const.
 
 - provide a small example in which the other is used.
 See example.cc

@@ -1,0 +1,16 @@
+preamble.txt
+-strings/strings.ih
+-strings/add.cc
+-strings/count.cc
+-strings/enlarge.cc
+-strings/fill.cc
+-strings/release.cc
+-strings/safeat.cc
+-strings/strings1.cc
+-strings/strings2.cc
+-strings/strings3.cc
+-strings/strings4.cc
+strings/~strings.cc
+-strings/swap.cc
+example.cc
+-main.cc
