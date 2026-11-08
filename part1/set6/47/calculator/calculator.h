@@ -20,16 +20,15 @@ class Calculator
 
     public:
         void run();
-        void debugToken(char const *where);
 
     private:
         void prompt();              // show the initial prompt
-        bool atEoln();
+        bool atEoln();              // check end of line
 
         bool ok();                  // true: expr. correctly completed
 
-        Value evaluate();
-        Value expr();
+        Value evaluate();           // evaluation from lowest to
+        Value expr();               // highest priority
         Value term();
         Value factor();
 
@@ -50,7 +49,7 @@ class Calculator
         Value ident();
 
         Value parenthesized();          // handle parenthesized expressions
-        Value unaryMinus();             // handle unary minues
+        Value unaryMinus();             // handle unary minuses
 
         Token show(Value const &value);
 

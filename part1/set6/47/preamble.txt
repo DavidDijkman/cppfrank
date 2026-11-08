@@ -1,0 +1,2 @@
+We are asked to make a calculator. It uses a given tokenizer class to parse the input. The symbol table from exercise 46 is used to keep track of variables.
+

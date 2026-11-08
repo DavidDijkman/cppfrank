@@ -8,6 +8,6 @@ void Calculator::assign(Value &lhs, Value const &rhs)
         d_ok = false;
         return;
     }
-
+                // assign value to symbol
     d_symtab.at(lhs.identidxValue()).assign(rvalue(rhs));
 }

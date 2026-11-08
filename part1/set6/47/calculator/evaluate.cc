@@ -6,7 +6,8 @@ Value Calculator::evaluate()
 
     while (charToken('='))
     {
-        Value rhs = evaluate();
+                // handle rightside evaluation before assignment
+        Value rhs = evaluate(); 
 
         if (!d_ok)
             return ret;

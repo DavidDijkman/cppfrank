@@ -2,7 +2,7 @@
 
 Value Calculator::expr()
 {
-    Value ret = term();                                 // the expr's term
+    Value ret = term();                                 // first term
 
     while ((this->*s_term[charTokens("+-")])(ret))      // add or sub terms
         ;

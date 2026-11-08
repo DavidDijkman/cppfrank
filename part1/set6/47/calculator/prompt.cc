@@ -4,7 +4,7 @@ void Calculator::prompt()
 {
     d_ok = true;
 
-    cout << "? " << flush;
+    cout << "? ";
 
     d_tokenizer.nextToken();
 }

@@ -7,6 +7,8 @@ bool Calculator::mul(Value &lhs)
     lhs = rvalue(lhs);
     rhs = rvalue(rhs);
 
+
+            // switch to doubles if necessary
     Token type = equalize(lhs, rhs);
 
     if (type == INT)

@@ -7,7 +7,7 @@ bool Calculator::div(Value &lhs)
     lhs = rvalue(lhs);
     rhs = rvalue(rhs);
 
-
+            // check for division by 0
     if (rhs.token() == INT && !divisionOK(rhs.intValue() == 0))
         return false;
 
@@ -15,6 +15,7 @@ bool Calculator::div(Value &lhs)
             !divisionOK(fabs(rhs.doubleValue()) < s_zeroDouble))
         return false;
 
+            // change to double division if necessary
     equalize(lhs, rhs);
 
     if (lhs.token() == INT)

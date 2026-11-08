@@ -9,6 +9,7 @@ bool Calculator::mod(Value &lhs)
 
     rhs = rvalue(rhs);
 
+                // check for division by 0
     if (rhs.token() == INT && !divisionOK(rhs.intValue() == 0))
         return false;
 
@@ -16,6 +17,7 @@ bool Calculator::mod(Value &lhs)
             !divisionOK(fabs(rhs.doubleValue()) < s_zeroDouble))
         return false;
 
+                // switch to doubles if necessary
     equalize(lhs, rhs);
 
     if (lhs.token() == INT)

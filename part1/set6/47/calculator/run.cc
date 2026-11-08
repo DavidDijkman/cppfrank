@@ -4,8 +4,7 @@ void Calculator::run()
 {
     while (true)
     {
-        prompt();
-
+        prompt();   // prompt for new line
 
         if (d_tokenizer.token() == QUIT)
         {
@@ -17,12 +16,12 @@ void Calculator::run()
             continue;
         }
 
-        Value value = evaluate();
+        Value value = evaluate();   // evaluate line
 
         if (!ok())
             cout << "error(s) in expression\n";
         else
-            show(value);
+            show(value);            // success
 
         d_tokenizer.reset();
     }

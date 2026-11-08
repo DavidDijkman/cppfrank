@@ -1,0 +1,14 @@
+preamble.txt
+charcount/charcount.ih
+charcount/append.cc
+charcount/charcount1.cc
+charcount/charcount2.cc
+charcount/count.cc
+charcount/data.cc
+charcount/enlarge.cc
+charcount/inc.cc
+charcount/insert.cc
+charcount/locate.cc
+charcount/rawcapacity.cc
+main.ih
+main.cc

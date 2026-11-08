@@ -1,0 +1,1 @@
+We are asked to improve the strings class by adding the reserve, resize, and capacity members. The improved class doesn't have to make a deep copy of every stored string when the capacity is increased. It only has to copy the pointers to those strings.

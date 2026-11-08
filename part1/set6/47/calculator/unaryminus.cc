@@ -4,6 +4,7 @@ Value Calculator::unaryMinus()
 {
     Value ret = rvalue(factor());
 
+            // negate factor to the right
     if (ret.token() == INT)
         ret = Value(-ret.intValue());
 

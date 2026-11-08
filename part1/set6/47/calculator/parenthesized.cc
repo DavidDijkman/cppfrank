@@ -2,12 +2,12 @@
 
 Value Calculator::parenthesized()
 {
-    Value ret = evaluate();
+    Value ret = evaluate(); // evaluate insides of parentheses
 
     if (!d_ok)
         return ret;
 
-    if (!charToken(')'))
+    if (!charToken(')'))    // closing parentheses has to match
     {
         cout << "parenthesis mismatch\n";
         d_ok = false;

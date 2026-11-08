@@ -7,6 +7,7 @@ bool Calculator::sub(Value &lhs)
     lhs = rvalue(lhs);
     rhs = rvalue(rhs);
 
+            // switch to double if necessary
     Token type = equalize(lhs, rhs);
 
     if (type == INT)

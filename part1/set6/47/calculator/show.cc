@@ -6,25 +6,25 @@ Token Calculator::show(Value const &value)
     {    
         case DOUBLE:
             cout << value.doubleValue() << " (double)\n";
-        break;
+            break;
 
         case INT:
             cout << value.intValue() << " (int)\n";
-        break;
+            break;
 
         case IDENT:
         {
-            auto symbol = d_symtab.at(value.intValue());
+            Symbol symbol = d_symtab.at(value.intValue());
             cout << symbol.ident() << " [value: ";
             if (symbol.type() == INT)
                 cout << symbol.intValue() << " (int)]\n";
             else
                 cout << symbol.doubleValue() << " (double)]\n";
+            break;
         }
-        break;
-
+            
         default: 
-        break;
+            break;
     }
 
     return ERROR;
