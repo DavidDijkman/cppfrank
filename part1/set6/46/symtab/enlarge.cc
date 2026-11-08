@@ -12,5 +12,5 @@ Symbol &Symtab::find(std::string const &name)
 
     // Delete old pointer and update variables
     delete[] d_symbol;
-    d_sym = newSym;
+    d_symbol = newSym;
 }

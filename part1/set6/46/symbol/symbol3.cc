@@ -1,6 +1,7 @@
 #include "symbol.ih"
 
-void Symbol::assign(Value const &value)
-{
-    d_value = value;
-}
+Symbol::Symbol(std::string const &ident, double value)
+:
+    d_ident(ident),
+    d_value(value)
+{}

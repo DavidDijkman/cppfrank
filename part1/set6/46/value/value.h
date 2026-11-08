@@ -1,6 +1,7 @@
 #ifndef INCLUDED_VALUE_
 #define INCLUDED_VALUE_
 
+#include <cstddef>
 #include "../enum/enum.h"
 
 class Value

@@ -2,5 +2,5 @@
 
 Symbol const &Symtab::at(size_t index) const
 {
-    return *d_sym[index];
+    return *d_symbol[index];
 }

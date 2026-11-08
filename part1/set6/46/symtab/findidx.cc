@@ -5,7 +5,7 @@ size_t Symtab::findIdx(std::string const &ident)
     size_t begin = 0;
     size_t end = d_size;
 
-    // Binary search for the identifier in the symbol table
+    // Use binary search to find the index of the symbol with the given identifier
     while (begin != end)
     {
         size_t mid = begin + (end - begin) / 2;
@@ -24,7 +24,7 @@ size_t Symtab::findIdx(std::string const &ident)
                 return mid;
         }
     }
-    // If not found, insert the identifier at the appropriate position
+
     insert(begin, ident);
     return begin;
 }
