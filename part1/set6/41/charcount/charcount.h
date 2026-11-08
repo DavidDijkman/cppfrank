@@ -28,27 +28,29 @@ class CharCount
 
         CharCount();                    // Constructor and destructor
         ~CharCount();
-
+                                        // Disable copy constructor and 
+                                        // assignment operator
         CharCount(CharCount const &other) = delete; 
         CharCount &operator=(CharCount const &other) = delete;
-
+                                        // Accessors and mutators
         size_t count(std::istream &in);
         CharInfo const &info() const;
         size_t capacity() const;
 
     private:
-        using ActionPtr = void (CharCount::*)(char ch, size_t idx);
-
+        // Type alias for pointer to member function and static array of
+        // function pointers for actions
+        using ActionPtr = void (CharCount::*)(char ch, size_t idx);                                    
         static ActionPtr const s_action[];
 
         CharInfo d_info;
         size_t d_capacity = 8;
-
+                                        // Manage memory for Char objects
         static Char *rawCapacity(size_t cap);
         void enlarge();
         
         Action locate(unsigned char uchar, size_t &idx) const;
-
+                                        // Separate functions for each action
         void inc(char ch, size_t idx);
         void insert(char ch, size_t idx);
         void append(char ch, size_t idx);
