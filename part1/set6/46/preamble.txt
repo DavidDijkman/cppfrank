@@ -5,5 +5,7 @@ classes:
 the value
 - symbol: objects of this class store the symbols name, and the type and 
 value usinga  value data member. 
-- symtab: the symbol table class. It has a member find, that extracts the name
-of an identifier,  
+- symtab: the symbol table class using dynamic memory via a double pointer.
+It has a member find, that returns the reference to the existing symbol, or 
+inserts or initializes a symbol. Member findIdx does the same, but returns the
+index. Member size() returns the number of stored symbols.   

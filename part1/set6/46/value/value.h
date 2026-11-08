@@ -13,6 +13,7 @@ class Value
         int     u_IDENTIdx;
     };
 
+    // Enum for value types
     Token d_token;
 
     public:
@@ -21,6 +22,7 @@ class Value
         Value(double value);                    // DOUBLE
         Value(size_t index, Token identType);   // IDENT
 
+        // Accessors and modifiers
         int intValue() const;
         void intValue(int value);
 
