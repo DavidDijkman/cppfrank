@@ -10,6 +10,6 @@ strings/resize.cc
 -strings/strings2.cc
 -strings/strings3.cc
 -strings/strings4.cc
--strings/~strings.cc
+-strings/strings0.cc
 -strings/swap.cc
 -main.cc

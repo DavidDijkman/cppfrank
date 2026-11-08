@@ -2,7 +2,7 @@
 
 Strings::POD Strings::release()
 {
-    POD ret{ d_size, d_capacity, d_str };       // initialize the POD for the caller
+    POD ret{ d_size, d_capacity, d_str };// initialize the POD for the caller
 
     d_size = 0;                     // reinitialize our data members
     d_capacity = 0;
