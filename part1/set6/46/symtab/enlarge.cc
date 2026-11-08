@@ -1,6 +1,6 @@
 #include "symtab.ih"
 
-Symbol &Symtab::find(std::string const &name)
+void Symtab::enlarge()
 {
     // Double the capacity of a new memory
     d_capacity *= 2;
