@@ -1,5 +1,6 @@
 preamble.txt
 -strings/strings.ih
+-strings/strings.h
 -strings/add.cc
 -strings/count.cc
 -strings/enlarge.cc

@@ -1,4 +1,5 @@
 strings/strings.ih
+strings/strings.h
 -strings/add.cc
 -strings/count.cc
 -strings/fill.cc

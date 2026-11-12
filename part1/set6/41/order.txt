@@ -1,5 +1,6 @@
 preamble.txt
 charcount/charcount.ih
+charcount/charcount.h
 charcount/append.cc
 charcount/charcount1.cc
 charcount/charcount2.cc

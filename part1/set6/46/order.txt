@@ -1,5 +1,6 @@
 preamble.txt
 symbol/symbol.ih
+symbol/symbol.h
 symbol/assign.cc
 symbol/compare.cc
 symbol/doubleValue.cc
@@ -11,6 +12,7 @@ symbol/symbol3.cc
 symbol/type.cc
 symbol/value.cc
 symtab/symtab.ih
+symtab/symtab.h
 symtab/at1.cc
 symtab/at2.cc
 symtab/enlarge.cc
@@ -21,6 +23,7 @@ symtab/size.cc
 symtab/symtab1.cc
 symtab/symtab2.cc
 value/value.ih
+value/value.h
 value/charvalue1.cc
 value/charvalue2.cc
 value/doublevalue1.cc
@@ -35,5 +38,6 @@ value/value1.cc
 value/value2.cc
 value/value3.cc
 value/value4.cc
+enum/enum.h
 -main.ih
 -main.cc

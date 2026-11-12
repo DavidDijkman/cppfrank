@@ -1,5 +1,6 @@
 preamble.txt
 calculator/calculator.ih
+calculator/calculator.h
 calculator/add.cc
 calculator/assign.cc
 calculator/ateoln.cc
@@ -33,6 +34,7 @@ calculator/term.cc
 calculator/todouble.cc
 calculator/unaryminus.cc
 -symbol/symbol.ih
+-symbol/symbol.h
 -symbol/assign.cc
 -symbol/compare.cc
 -symbol/doubleValue.cc
@@ -44,6 +46,7 @@ calculator/unaryminus.cc
 -symbol/type.cc
 -symbol/value.cc
 -symtab/symtab.ih
+-symtab/symtab.h
 -symtab/at1.cc
 -symtab/at2.cc
 -symtab/enlarge.cc
@@ -54,12 +57,14 @@ calculator/unaryminus.cc
 -symtab/symtab1.cc
 -symtab/symtab2.cc
 -tokenizer/tokenizer.ih
+-tokenizer/tokenizer.h
 -tokenizer/identifier.cc
 -tokenizer/intordouble.cc
 -tokenizer/nexttoken.cc
 -tokenizer/reset.cc
 -tokenizer/tokenizer1.cc
 -value/value.ih
+-value/value.h
 -value/charvalue1.cc
 -value/charvalue2.cc
 -value/doublevalue1.cc
@@ -74,5 +79,6 @@ calculator/unaryminus.cc
 -value/value2.cc
 -value/value3.cc
 -value/value4.cc
+-enum/enum.h
 -main.ih
 -main.cc
