@@ -1,0 +1,16 @@
+
+With the if statement:
+
+david@david-HP-Spectre-x360:~/cppfrank/exercises/part1/set7/49$ time ./main 100'000'000
+
+real	0m8.795s
+user	0m8.789s
+sys	0m0.002s
+
+without the if statement:
+
+david@david-HP-Spectre-x360:~/cppfrank/exercises/part1/set7/49$ time ./main 100'000'000
+
+real	0m11.724s
+user	0m11.720s
+sys	0m0.002s
