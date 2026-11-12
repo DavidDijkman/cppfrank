@@ -1,0 +1,6 @@
+fstream does not have functionality for creating a file by default. ofstream 
+does. So if the file isn't created, fstream can not write to it.
+
+you can fix this by setting the mode of the fstream object to output:
+
+fstream out2{ "out2" , ios::out};
