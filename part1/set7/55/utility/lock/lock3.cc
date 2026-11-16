@@ -2,6 +2,6 @@
 
 Lock::~Lock()
 {
-    if (d_fileDescriptor != -1)
+    if (d_fileDescriptor != -1)    // Close the file descriptor if it is valid
         ::close(d_fileDescriptor);
 }

@@ -7,8 +7,7 @@ class Lock
 {
     int d_fileDescriptor = -1;
     
-    
-    public:
+    public:                             // Constructors and Destructor
         Lock(std::string const &path);
         Lock(std::string const &path, std::string lockDir);
         ~Lock();

@@ -1,0 +1,13 @@
+We are asked to make a class named Lock, that prevents clobbering of updates 
+on a program made by two different users. Constructors of Lock write a lock 
+file which is used for lock-administration. Locking goes through the function
+flock() while unlocking goes through close(). 
+
+A library is made which contains the class elements. This is done by adjusting
+our makefile program, by adding the following line:
+
+ar rcs libcfbutility.a $(OBJECTS)
+
+This command builds the library by inserting all object files to the archive.
+It creates libcfbutitility.a inside the utility folder, while the program
+using the library can be plased in another folder. 
