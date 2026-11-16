@@ -1,0 +1,10 @@
+preamble.txt
+lock/lock.h
+lock/lock.ih
+lock/lock1.cc
+lock/lock2.cc
+lock/lock3.cc
+lock/lockpath.cc
+lock/open.cc
+lock/stringname.cc
+program/main.cc
