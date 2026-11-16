@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+#include "fch/fch.h"
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+    if (argc < 3) 
+        return 1;
+
+    Fch fch = Fch(argv[1]);
+    return fch.run();
+}

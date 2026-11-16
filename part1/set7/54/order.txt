@@ -1,0 +1,16 @@
+preamble.txt
+text.txt
+fch/fch.h
+fch/fch.ih
+fch/ask.cc
+fch/fch1.cc
+fch/findtarget.cc
+fch/insertline.cc
+fch/modify.cc
+fch/openinput.cc
+fch/process.cc
+fch/request.cc
+fch/run.cc
+fch/searchreplace.cc
+fch/showmodification.cc
+main.cc

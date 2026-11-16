@@ -1,0 +1,1 @@
+We are asked to create a stream manipulator that prints the current time as done by asctime, but without a trainling newline.

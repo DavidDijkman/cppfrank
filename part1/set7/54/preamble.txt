@@ -1,0 +1,1 @@
+We are asked to create an interactive find-and-replace program. It is implemented using a class Fch. The allChanged() and requestedN() members were omitted, as their utility was unclear from the provided member function list.

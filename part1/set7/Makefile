@@ -671,7 +671,7 @@ submit:
 	            (
 	                cd "$$dir" 2>/dev/null && {
 	                    {
-                            ls *.h 2>/dev/null
+	                        ls *.h 2>/dev/null
 	                        ls *.hh 2>/dev/null
 	                        ls *.ih 2>/dev/null
 	                        ls *.cc 2>/dev/null | grep -v '^main.cc$$'
