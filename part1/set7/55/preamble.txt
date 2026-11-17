@@ -9,5 +9,6 @@ our makefile program, by adding the following line:
 ar rcs libcfbutility.a $(OBJECTS)
 
 This command builds the library by inserting all object files to the archive.
-It creates libcfbutitility.a inside the utility folder, while the program
-using the library can be plased in another folder. 
+It creates libcfbutitility.a inside the folder of the exercise, while the
+program using the library can be placed in another folder. This folder is 
+named program in our case. 
