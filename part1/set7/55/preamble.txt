@@ -4,11 +4,27 @@ file which is used for lock-administration. Locking goes through the function
 flock() while unlocking goes through close(). 
 
 A library is made which contains the class elements. This is done by adjusting
-our makefile program, by adding the following line:
+our makefile program, which looks like this:
 
-ar rcs libcfbutility.a $(OBJECTS)
+CXXFLAGS = -std=c++20 -Wall -Werror
 
-This command builds the library by inserting all object files to the archive.
+OBJECTS = lock/lock1.o \
+          lock/lock2.o \
+          lock/lock3.o \
+          lock/lockpath.o \
+          lock/open.o \
+          lock/stringname.o
+
+libcfbutility.a: $(OBJECTS)
+	ar rcs libcfbutility.a $(OBJECTS)
+
+$(OBJECTS): lock/lock.h lock/lock.ih
+
+clean:
+	rm -f $(OBJECTS) libcfbutility.a
+
+Here, ar rcs libcfbutility.a $(OBJECTS) builds the library by inserting all 
+object files to the archive.
 It creates libcfbutitility.a inside the folder of the exercise, while the
 program using the library can be placed in another folder. This folder is 
 named program in our case. 
