@@ -23,7 +23,7 @@ class Data
         };
 
         // Constructors
-        Data(double *doubles);          // data1.cc
+        Data(double *doubles);         // data1.cc
         Data(std::string const &word); // data2.cc
         Data(std::size_t value);       // data3.cc
 
