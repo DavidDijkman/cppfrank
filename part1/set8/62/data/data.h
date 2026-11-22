@@ -32,7 +32,12 @@ class Data
         Data(Data &&other, Type type);      // data5.cc
 
         // Destructor
-        ~Data() = default; // must be empty
+        ~Data();                        // data0.cc
+
+        // Accessors
+        double const *doubles() const;
+        std::string const &word() const;
+        std::size_t const &value() const;
 
         // Operations
         void destroy(Type type);
