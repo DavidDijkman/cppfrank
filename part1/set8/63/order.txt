@@ -36,7 +36,7 @@ preamble.txt
 -data/word.cc
 wrap/wrap.h
 wrap/wrap.ih
-wrap/assign.cc
+wrap/operatorassign1.cc
 wrap/doubles.cc
 wrap/swap.cc
 wrap/type.cc

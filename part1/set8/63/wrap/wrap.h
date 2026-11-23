@@ -26,7 +26,7 @@ class Wrap
 
         ~Wrap();                            // wrap0.cc Destructor
 
-        Wrap &operator=(Wrap const &other); // assign.cc
+        Wrap &operator=(Wrap const &other); // operatorassign1.cc
 
         void swap(Wrap& other);
 
