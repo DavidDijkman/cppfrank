@@ -1,0 +1,5 @@
+We are asked to demonstrate four operations using a simple class Demo in a 
+single source file. The class Demo contains a constructor, destructor, 
+copy constructor, move constructor, and copy/move assignment operators.  
+
+The code used for this exercise is shown here:
