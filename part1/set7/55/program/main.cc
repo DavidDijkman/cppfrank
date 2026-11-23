@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 
-#include "lock/lock.h"
+#include "../lock/lock.h"
 
 using namespace std;
 

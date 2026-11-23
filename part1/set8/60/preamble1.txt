@@ -1,0 +1,27 @@
+When running the code, we get this output for each of the demos:
+
+- Demo of copy ellision:
+Default Constructor
+- Demo of move constructor:
+Move Constructor
+- Demo of copy assignment:
+Copy Assignment
+- Demo of move assignment:
+Default Constructor
+Move Assignment
+Destructor
+Destructor
+Destructor
+
+So, we can see from this for each demo:
+- Demo of copy ellision: Neither copy or move contructor is called, copy 
+ellision constructs Demo{} directly in demo1's memory.
+- Demo of move constructor: Initializing a new object with move calls move 
+constructor.
+- Demo of copy assignment: Assigning an existing object invokes the copy
+assignment operator.
+- Demo of move assignment: First the default constructor constructs 
+temporary demo object, then it moves into demo2, and then destructor destroys
+the temporary demo object. 
+
+The two destructors at the end are when demo 1 and 2 are destroyed. 

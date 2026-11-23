@@ -1,0 +1,47 @@
+We are asked to create a simple class storing a number of ints. The class will
+allocate memory for its own use, therefore, it defines the copy constructor,
+an overloaded assignment operator and a destructor. I has public member 
+functions that allow to inspect or modify the ints.
+
+We developped main.cc where all actions of the class are tested and printed.
+The output of main gives the following, where we find the expected results:
+empty (0): Numbers of length 0:
+
+nums (4): Numbers of length 4:
+7 7 7 7
+nums.at(1): 42
+nums (4): Numbers of length 4:
+7 42 7 7
+nums.at(10): Numbers::at: index 10 out of range (size 4)
+0
+constNums.at(0): 3
+copy (4): Numbers of length 4:
+100 42 7 7
+nums (4): Numbers of length 4:
+7 42 7 7
+moved (4): Numbers of length 4:
+100 42 7 7
+copy (0): Numbers of length 0:
+
+assigned (4): Numbers of length 4:
+7 42 7 -1
+nums (4): Numbers of length 4:
+7 42 7 7
+assigned after a = a (4): Numbers of length 4:
+7 42 7 -1
+target (4): Numbers of length 4:
+100 42 7 7
+moved (0): Numbers of length 0:
+
+target = factory() (3): Numbers of length 3:
+5 5 5
+a after swap (3): Numbers of length 3:
+2 2 2
+b after swap (2): Numbers of length 2:
+1 1
+
+--- uninitialized ints ---
+filled (8): Numbers of length 8:
+1234 1234 1234 1234 1234 1234 1234 1234
+raw    (8): Numbers of length 8:
+-2053898407 5 0 0 1234 1234 1234 1234

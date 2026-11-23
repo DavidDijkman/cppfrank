@@ -1,0 +1,2 @@
+We are asked to adjust our made class Strings such that it offers copy and 
+move constructors, such that the class is a leak free class.
