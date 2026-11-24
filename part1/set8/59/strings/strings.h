@@ -2,13 +2,14 @@
 #define INCLUDED_STRINGS_
 
 #include <iosfwd>
+#include <string>
 
 class Strings
 {
     size_t d_size;
     std::string *d_str;
     size_t d_nIterate;
-    std::string *(*d_enlarge)();
+    std::string *(Strings::*d_enlarge)();
 
     public:
         struct POD
@@ -35,6 +36,7 @@ class Strings
         std::string &at(size_t idx);
 
         void add(std::string const &next);          // add another element
+        void iterate(char **environLike);
 
     private:
         void fill(char *ntbs[]);                    // fill prepared d_str
@@ -43,8 +45,6 @@ class Strings
         std::string *enlargebycopy();
         std::string *enlargebymove();
         
-        void iterate(char **environLike);
-
         static size_t count(char *environLike[]);   // # elements in env.like
 };
 
