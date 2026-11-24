@@ -1,5 +1,0 @@
-#include "wrap.h"
-
-#include "../data/data.h"
-
-using namespace std;

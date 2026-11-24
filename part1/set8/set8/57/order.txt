@@ -1,6 +1,0 @@
-strings/strings.h
-strings/strings5.cc
-strings/strings6.cc
-strings/strings7.cc
-strings/strings8.cc
-strings/swap.cc

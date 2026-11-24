@@ -1,3 +1,0 @@
-Set: Set 8
-Authors: David Dijkman, Christian Berg
-Rater:

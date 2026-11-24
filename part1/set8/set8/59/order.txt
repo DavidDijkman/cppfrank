@@ -1,9 +1,0 @@
-preamble.txt
-strings/strings.h
-strings/strings5.cc
-strings/strings6.cc
-strings/enlargebycopy.cc
-strings/enlargebymove.cc
-strings/add.cc
-strings/iterate.cc
-main.cc

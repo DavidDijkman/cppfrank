@@ -1,7 +1,0 @@
-We are asked to create an unrestricted untion Data, holding either:
-- VALUE:  a size_t
-- WORD:   a std::string
-- DOUBLE: an array of doubles
-
-The class contains constructors for each type, as well as a copy and move 
-constructor. The class itself is unaware of what type it is holding.
