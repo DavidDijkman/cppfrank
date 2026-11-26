@@ -1,0 +1,1 @@
+We are asked to create a stronly typed enum Msg, which holds bitflags for 8 warnings. We are asked to create various bitwise operators that operate on Msg and a show function that prints the names of all the set bits of the provided enum.
