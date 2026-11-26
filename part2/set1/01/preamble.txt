@@ -1,0 +1,1 @@
+We are asked to implement an overloaded function for the index, insertion, and (in)equality operator for the Numbers class. Only the new members are submitted.

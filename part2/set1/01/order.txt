@@ -1,0 +1,8 @@
+numbers/numbers.h
+numbers/numbers.ih
+numbers/operatorequality.cc
+numbers/operatorindex1.cc
+numbers/operatorindex2.cc
+numbers/operatorinequality.cc
+numbers/operatorinsertion.cc
+main.cc
