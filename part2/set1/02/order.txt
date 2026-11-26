@@ -1,0 +1,13 @@
+preamble.txt
+numbers/numbers.h
+numbers/numbers.ih
+numbers/opaddcompound.cc
+numbers/opdivcompound.cc
+numbers/operatoradd.cc
+numbers/operatordiv.cc
+numbers/operatormult.cc
+numbers/operatormultfriend.cc
+numbers/operatorsubtract.cc
+numbers/opmultcompound.cc
+numbers/opsubcompound.cc
+main.cc
