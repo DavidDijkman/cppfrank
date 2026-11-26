@@ -1,9 +1,9 @@
 preamble.txt
-strings.h
-strings5.cc
-strings6.cc
-enlargebycopy.cc
-enlargebymove.cc
-add.cc
-iterate.cc
+strings/strings.h
+strings/strings5.cc
+strings/strings6.cc
+strings/enlargebycopy.cc
+strings/enlargebymove.cc
+strings/add.cc
+strings/iterate.cc
 main.cc

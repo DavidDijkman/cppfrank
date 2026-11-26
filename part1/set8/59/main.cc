@@ -8,7 +8,7 @@ extern char **environ;
 
 int main(int argc, char *argv[])
 {
-    if (argc < 2)
+    if (argc < 2)                   // Check for correct number of arguments
     {
         cout << "Usage: " << argv[0] << " <nIterations> [move]\n";
         return 1;
@@ -17,10 +17,10 @@ int main(int argc, char *argv[])
     size_t nIterate = stoul(argv[1]);
     bool copy = (argc == 2);
 
-    Strings str(nIterate, copy);
+    Strings str(nIterate, copy);            // Create Strings object
     str.iterate(environ);
 
-    if (str.size() > 0)
+    if (str.size() > 0)                     // Print first and last string
     {
         cout << "First: " << str.at(0) << '\n'
              << "Last:  " << str.at(str.size() - 1) << '\n';
