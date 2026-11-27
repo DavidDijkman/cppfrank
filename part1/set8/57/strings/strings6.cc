@@ -6,5 +6,5 @@ Strings::Strings(Strings &&tmp)
     d_str(tmp.d_str)
 {
     tmp.d_size = 0;                         // leave tmp in a valid state
-    tmp.d_str = nullptr;
+    tmp.d_str = 0;
 }
