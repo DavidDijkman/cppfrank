@@ -1,0 +1,10 @@
+We are asked to make a program that takes as first argument a filename that 
+needs to be copied, and the second argument is the name of the copy. We will 
+do this without using streams, and the copy should have the same timestamp as
+the copied file. We can do this using the filesystem library. 
+
+The output is as given in the exercise:
+
+ls -l main.*
+-rwxrwxrwx 1 chris chris 33 Nov 27 16:52 main.cc
+-rwxrwxrwx 1 chris chris 33 Nov 27 16:52 main.copy
