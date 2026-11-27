@@ -1,0 +1,32 @@
+When we compile the given code, we get the following error:
+    [ Compile      main.cc      =>      main.cc.o       ]
+main.cc: In function ‘bool promptGet(std::istream&, std::string&)’:
+main.cc:10:19: error: cannot convert ‘std::basic_istream<char>’ to ‘bool’ 
+                                                                in return
+   10 |     return getline(in, str);
+      |            ~~~~~~~^~~~~~~~~
+      |                   |
+      |                   std::basic_istream<char>
+In file included from /usr/include/c++/15/ios:48,
+                 from /usr/include/c++/15/bits/ostream.h:43,
+                 from /usr/include/c++/15/ostream:42,
+                 from /usr/include/c++/15/iostream:43,
+                 from main.cc:1:
+/usr/include/c++/15/bits/basic_ios.h:124:16: note: explicit conversion 
+                                                function was not considered
+  124 |       explicit operator bool() const
+      |                ^~~~~~~~
+make: *** [Makefile:342: main.cc.o] Error 1
+
+
+The error occurs because getline(in, str) does not return a bool but returns
+the stream itself. The compiler cannot convert an istream into a bool, because
+of how the conversion operator is defined. As seen in the error, the 
+conversion operator is declared explicit, while return ... is an implicit
+conversion.
+
+We are asked to change promptGet's body so that the code does compile.
+We can do that using static_cast<bool>. 
+
+We are also asked to make the code compile, by leaving promptGets body as it 
+is. 
